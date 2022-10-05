@@ -40,7 +40,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>About - Brendan Downing</title>
         <meta
           name="description"
           content="I’m Brendan Downing. I live in Reno, where I code my heart out."
