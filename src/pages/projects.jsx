@@ -3,47 +3,63 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
+import windVentory from '../../images/windventory.png'
 import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
+import chatter from '../../images/chatter.png'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import openBeta from '../../images/openbeta.png'
+import soundClout from '../../images/soundclout.png'
+import doggyDone from '../../images/doggy-done.jpeg'
+import Link from 'next/link'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'OpenBeta.io',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'OpenBeta is a new climbing platform, focused completely on empowering the community with open license climbing beta and open source tools. I have built the ticks feature, and do general maintainence/debugging to help out. OpenBeta is made with Next.js, MongoDB, ApolloGraphQL, Tailwind.css, and many other frameworks',
+    liveLink: { href: 'http://openbeta.io', label: 'OpenBeta.io' },
+    gitHubLink: { href: 'https://github.com/OpenBeta', label: 'OpenBeta on Github' },
+    logo: openBeta,
   },
   {
-    name: 'Animaginary',
+    name: 'FeatureBox',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
-  },
-  {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
+      'A practical approach to data structures and algoritihms. This application uses what I have learned from studying data structures and algorithims and applies it to real world features (ex: using a Trie cache to make a text autocomplete feature). Created with Next.js, Tailwind.css, AWS, PostgreSQL, Java, and Spring Boot',
+    liveLink: { href: 'https://github.com/Downster/FeatureBox', label: 'FeatureBox - in progress' },
+    gitHubLink: { href: 'https://github.com/Downster/FeatureBox', label: 'FeatureBox on Github' },
     logo: logoOpenShuttle,
+  },
+  {
+    name: 'windVentory',
+    description:
+      'Inventory tracking application created over a month, utilizing Javascript, Python, React.js, Flask, Redux, and Socket.io.',
+    liveLink: { href: 'http://windVentory.herokuapp.com', label: 'windVentory' },
+    gitHubLink: { href: 'https://github.com/Downster/windVentory', label: 'windVentory on Github' },
+    logo: windVentory,
+  },
+  {
+    name: 'Chatter',
+    description:
+      'Chatter is a full-stack web application clone of slack.com. Chatter allows users create and join channels, interact with other users via a live chat, and send direct messages to other users or groups of users. Chatter was developed utilizing React.js, Redux, PostgreSQL, Flask, Socket.io, AWS, and many other technologies',
+    liveLink: { href: 'https://chatterwithus.herokuapp.com', label: 'Chatter' },
+    gitHubLink: { href: 'https://github.com/celestewinterton/chatter', label: 'Chatter on Github' },
+    logo: chatter,
+  },
+  {
+    name: 'SoundClout',
+    description:
+      'SoundClout is a pixel perfect Soundcloud clone. Users can upload and comment on songs, aswell as view the songs as a waveform and leave comments at specific times during the song. Soundclout was built with Express.js, AWS S3, React.js, Redux, Wavesurfer.js, Howler.js, etc...',
+    liveLink: { href: 'soundclout-app.herokuapp.com', label: 'SoundClout' },
+    gitHubLink: { href: 'https://github.com/OpenBeta', label: 'OpenBeta on Github' },
+    logo: soundClout,
+  },
+  {
+    name: 'DoggyDone',
+    description:
+      'Doggy Done is a "smart to-do app" for dog owners, that organizes user tasks, and allows for interactivity on tasks between users. It is inspired by Remember the Milk. Doggy Done is a single page application built with purely vanllia javascript and Pug.js, with an Express.js backend',
+    liveLink: { href: 'http://doggy-done.herokuapp.com', label: 'Doggy Done' },
+    gitHubLink: { href: '', label: 'OpenBeta on Github' },
+    logo: doggyDone,
   },
 ]
 
@@ -62,15 +78,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Brendan Downing</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Things I’ve made trying to make my mark on the world."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Things I’ve made trying to make my mark on the world."
+        intro="I've been pretty busy over the past year and a half, here are some of the projects that I am most proud of."
       >
         <ul
           role="list"
@@ -82,17 +98,26 @@ export default function Projects() {
                 <Image
                   src={project.logo}
                   alt=""
-                  className="h-8 w-8"
+                  className="h-8 w-8 rounded-full"
                   unoptimized
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={project.liveLink.href}>{project.name}</Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2">{project.link.label}</span>
+                <span className="ml-2">{project.liveLink.label}</span>
+                {/* <LinkIcon className="h-6 w-6 flex-none" />
+                <span className="ml-2">
+                  <Link
+                    href={project.gitHubLink.href}
+                    className="z-20"
+                  >
+                    {project.gitHubLink.label}
+                  </Link>
+                </span> */}
               </p>
             </Card>
           ))}
