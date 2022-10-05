@@ -41,7 +41,7 @@ const projects = [
     name: 'Chatter',
     description:
       'Chatter is a full-stack web application clone of slack.com. Chatter allows users create and join channels, interact with other users via a live chat, and send direct messages to other users or groups of users. Chatter was developed utilizing React.js, Redux, PostgreSQL, Flask, Socket.io, AWS, and many other technologies',
-    liveLink: { href: 'https://chatterwithus.herokuapp.com', label: 'Chatter' },
+    liveLink: { href: 'https://chatter-with-us.herokuapp.com', label: 'Chatter' },
     gitHubLink: { href: 'https://github.com/celestewinterton/chatter', label: 'Chatter on Github' },
     logo: chatter,
   },
