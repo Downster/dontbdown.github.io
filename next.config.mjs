@@ -12,11 +12,6 @@ const nextConfig = {
     newNextLinkBehavior: true,
     scrollRestoration: true,
   },
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
-  assetPrefix: './',
 };
 
 const withMDX = nextMDX({
