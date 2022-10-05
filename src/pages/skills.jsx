@@ -42,7 +42,7 @@ export default function Uses() {
       </Head>
       <SimpleLayout
         title="Technologies and frameworks I use."
-        intro="These are all the technologies and frameworks that I have experience with. This list is not comprehenive by any means, I love learning new things and am diving into new technologies regularly"
+        intro="These are all the technologies and frameworks that I have experience with. This list is not comprehenive by any means, I love learning new things and am diving into new technologies regularly."
       >
         <div className="space-y-20">
           <ToolsSection title="Languages">

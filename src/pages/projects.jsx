@@ -103,12 +103,15 @@ export default function Projects() {
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.liveLink.href}>{project.name}</Card.Link>
+                <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
+                <a href={project.liveLink.href} target="_blank" rel='noopener noreferrer' className="relative z-10">{project.name}</a>
               </h2>
               <Card.Description>{project.description}</Card.Description>
+
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2">{project.liveLink.label}</span>
+                <a href={project.liveLink.href} target="_blank" rel='noopener noreferrer' className="ml-2">{project.liveLink.label}</a>
+
                 {/* <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">
                   <Link

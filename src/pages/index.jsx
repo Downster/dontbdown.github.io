@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
+import { ChevronRightIcon } from '@/components/Card'
 import {
   InstagramIcon,
   GitHubIcon,
@@ -96,11 +97,14 @@ function Project({ project }) {
         className="h-8 w-8 rounded-full"
         unoptimized
       />
-      <Card.Title href={project.slug}>
+      <Card.Title>
         {project.title}
       </Card.Title>
       <Card.Description>{project.description}</Card.Description>
-      <Card.Cta>View project</Card.Cta>
+      <div className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+        <a href={project.slug} target="_blank" rel='noopener noreferrer'>View Project</a>
+        <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
+      </div>
     </Card>
   )
 }
