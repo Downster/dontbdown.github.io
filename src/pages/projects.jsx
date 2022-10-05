@@ -49,7 +49,7 @@ const projects = [
     name: 'SoundClout',
     description:
       'SoundClout is a pixel perfect Soundcloud clone. Users can upload and comment on songs, aswell as view the songs as a waveform and leave comments at specific times during the song. Soundclout was built with Express.js, AWS S3, React.js, Redux, Wavesurfer.js, Howler.js, etc...',
-    liveLink: { href: 'soundclout-app.herokuapp.com', label: 'SoundClout' },
+    liveLink: { href: 'http://soundclout-app.herokuapp.com', label: 'SoundClout' },
     gitHubLink: { href: 'https://github.com/OpenBeta', label: 'OpenBeta on Github' },
     logo: soundClout,
   },
