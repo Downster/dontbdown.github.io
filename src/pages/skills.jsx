@@ -55,17 +55,25 @@ export default function Uses() {
             <Tool title="Python" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"}>
               <div>While slithery(??????), I love the balance that Python strikes. It is efficient and succinct. It also has some very useful built in datastructures, and is very easy to start a backend when combined with flask.  </div>
             </Tool>
+            <Tool title="GraphQL" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"}>
+              <div>I love how succinct GrapQL is. It makes getting the information you need, very simple.</div>
+            </Tool>
             <Tool title="HTML5" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"}>
               <div>Tried and true and the only option for rendering websites. We're stuck with you HTML.</div>
             </Tool>
             <Tool title="CSS3" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"}>
               <div>The bane of my existence, but oh so satisfying when it works.</div>
             </Tool>
+          </ToolsSection>
+          <ToolsSection title="Databases">
             <Tool title="PostgreSQL" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"}>
               <div>You can't really do anything without a database and PosgreSQL is tried and true. I love wrangling data with queries in SQL</div>
             </Tool>
+            <Tool title="MongoDB" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"}>
+              <div>MongoDB makes it easy to work with data, when you don't need the relationships of relational databases</div>
+            </Tool>
           </ToolsSection>
-          <ToolsSection title="Frontend Frameworks">
+          <ToolsSection title="Frontend Tools/Frameworks">
             <Tool title="Tailwind.css" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"}>
               <div>Tailwind makes the madness of css a bit more manageable for me. I love this framework.</div>
             </Tool>
@@ -79,7 +87,7 @@ export default function Uses() {
               <div>My favorite state management tool, though I haven't used any others so I'm definately biased.</div>
             </Tool>
           </ToolsSection>
-          <ToolsSection title="Backend Frameworks">
+          <ToolsSection title="Backend Tools/Frameworks">
             <Tool title="Spring" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"}>
               <div>Spring has been around for a long time, and while it is fairly complex I love how easy it is to get an app up and running with Spring Boot. I really enjoy working with this backend.</div>
             </Tool>
@@ -89,6 +97,7 @@ export default function Uses() {
             <Tool title="Express.js" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"}>
               <div>I really don't like express that much, it just feels overly complicated to me.</div>
             </Tool>
+
 
           </ToolsSection>
           <ToolsSection title="Development tools">
