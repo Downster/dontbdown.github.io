@@ -63,7 +63,9 @@ export default function Speaking() {
       </Head>
       <SimpleLayout
         title="I have worked on small, collaborative teams most of my life."
-        intro=""
+        intro="These experiences have given me great collaboration, teamwork, people skills and an ability to give and recieve feedback easily. I am a hard worker, and quick learner who feels at home when trying to figure out 
+        a problem that I don't know the answer to. I have a proven track record of progressing in my roles and responsibilities at each company I have worked at and encompass a growth mindset in all that I do.
+        "
       >
         <div className="space-y-20">
           <SpeakingSection title="OpenBeta.io">
