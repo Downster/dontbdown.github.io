@@ -193,12 +193,12 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <div className='flex flex-row rounded-lg bg-zinc-800 justify-center items-center group mt-2 mb-2'>
-        <ArrowDownIcon className="flex h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-        <a href="../../images/ResumePSQLCE.pdf" variant="secondary" download className="flex">
+      <Button variant="secondary" className="group mt-6 w-full">
+        <a href="https://github.com/Downster/dontbdown.github.io/raw/main/images/ResumePSQLCR.pdf" locale={false} download className="flex">
           Download CV
         </a>
-      </div>
+        <ArrowDownIcon className="flex h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+      </Button>
     </div>
   )
 }
