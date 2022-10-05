@@ -276,7 +276,7 @@ export default function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I am a fast learner, curious problem solver, and adventurous soul who loves learning new things of all shapes, sizes and mediums. The majority of my life has been spent working on
-            small teams, where collaboration and communication are extremely important. In my free time, I am usually rock climbing or playing guitar. Click on the about tab to learn more about me!          </p>
+            small teams, where collaboration, growth, and communication are extremely important. In my free time, I am usually rock climbing or playing guitar. Click on the about tab to learn more about me!          </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://instagram.com/badtraddad"
