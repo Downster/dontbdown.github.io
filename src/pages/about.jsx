@@ -70,8 +70,7 @@ export default function About() {
                 to an extremely closed off client, or learning a new technology or framework. I am confident that I will not only find a way to solve the problem, but learn something about myself along the way
                 and ultimately become a better person for it.
               </p>
-              <p>I have worked in renewable energy as a blade repair technician, as a social worker, a wilderness therapy guide for at risk youth, and as a supervisor at a climbing gym. I have extensive
-                experience working on small, tight knit teams. These experiences have given me excellent communication and teamwork skills and allow me to work effectively and efficiently with many types of people.
+              <p>I have worked in renewable energy as a blade repair technician, as a social worker, a wilderness therapy guide for at risk youth, and as a supervisor at a climbing gym. These experiences have given me excellent communication and teamwork skills which allow me to work effectively and efficiently with many types of people.
                 My diverse skillset, coupled with my determination, communication skills, attention to detail and problem solving abilities will make me a great addition to your team.
                 Lets build something great, and change the world. One line at a time.
               </p>

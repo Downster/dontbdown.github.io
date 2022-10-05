@@ -7,7 +7,6 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
-  TwitterIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
@@ -23,7 +22,11 @@ import openBeta from '../../images/openbeta.png'
 import ropePartner from '../../images/ropepartner.png'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
-import { formatDate } from '@/lib/formatDate'
+import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
+import windVentory from '../../images/windventory.png'
+import chatter from '../../images/chatter.png'
+import soundClout from '../../images/soundclout.png'
+import doggyDone from '../../images/doggy-done.jpeg'
 
 function MailIcon(props) {
   return (
@@ -84,17 +87,20 @@ function ArrowDownIcon(props) {
   )
 }
 
-function Article({ article }) {
+function Project({ project }) {
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
+      <Image
+        src={project.logo}
+        alt=""
+        className="h-8 w-8 rounded-full"
+        unoptimized
+      />
+      <Card.Title href={project.slug}>
+        {project.title}
       </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Description>{project.description}</Card.Description>
+      <Card.Cta>View project</Card.Cta>
     </Card>
   )
 }
@@ -106,6 +112,7 @@ function SocialLink({ icon: Icon, ...props }) {
     </Link>
   )
 }
+
 
 
 function Resume() {
@@ -182,10 +189,12 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
+      <div className='flex flex-row rounded-lg bg-zinc-800 justify-center items-center group mt-2 mb-2'>
+        <ArrowDownIcon className="flex h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        <a href="../../images/ResumePSQLCE.pdf" variant="secondary" download className="flex">
+          Download CV
+        </a>
+      </div>
     </div>
   )
 }
@@ -217,7 +226,27 @@ function Photos() {
   )
 }
 
-export default function Home({ articles }) {
+export default function Home() {
+  const projects = [
+    {
+      title: "OpenBeta.io",
+      description: 'OpenBeta is a new climbing platform, focused completely on empowering the community with open license climbing beta and open source tools. I have built the ticks feature, and do general maintainence/debugging to help out. OpenBeta is made with Next.js, MongoDB, ApolloGraphQL, Tailwind.css, and many other frameworks',
+      slug: "http://openbeta.io",
+      logo: openBeta
+    },
+    {
+      title: "FeatureBox",
+      description: 'A practical approach to data structures and algoritihms. This application uses what I have learned from studying data structures and algorithims and applies it to real world features (ex: using a Trie cache to make a text autocomplete feature). Created with Next.js, Tailwind.css, AWS, PostgreSQL, Java, and Spring Boot',
+      slug: "http://github.com/downster/featurebox",
+      logo: logoOpenShuttle
+    },
+    {
+      title: "windVentory",
+      description: 'Inventory tracking application created over a month, utilizing Javascript, Python, React.js, Flask, Redux, and Socket.io.',
+      slug: 'http://windventory.herokuapp.com',
+      logo: windVentory
+    }
+  ]
   return (
     <>
       <Head>
@@ -235,8 +264,8 @@ export default function Home({ articles }) {
             Software engineer, rock climber, and enviornmental advocate
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-
-          </p>
+            I am a fast learner, curious problem solver, and adventurous soul who loves learning new things of all shapes, sizes and mediums. The majority of my life has been spent working on
+            small teams, where collaboration and communication are extremely important. In my free time, I am usually rock climbing or playing guitar. Click on the about tab to learn more about me!          </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://instagram.com/badtraddad"
@@ -260,8 +289,8 @@ export default function Home({ articles }) {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
+            {projects.map((project) => (
+              <Project key={project.slug} project={project} />
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">

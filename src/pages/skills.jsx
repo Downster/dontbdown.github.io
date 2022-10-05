@@ -119,7 +119,7 @@ export default function Uses() {
               </div>
             </Tool>
           </ToolsSection>
-          <ToolsSection title="Object Relational Models">
+          <ToolsSection title="Object Relational Mapping">
             <Tool title="SQLAlchemy" imgSrc={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg'}>
               <div>
                 This ORM is truly ALCHEMY. I love so many features on this, especially how it pretty much eager loads everything.
