@@ -101,10 +101,15 @@ function Project({ project }) {
         {project.title}
       </Card.Title>
       <Card.Description>{project.description}</Card.Description>
-      <div className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+      {project.slug && <div className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
         <a href={project.slug} target="_blank" rel='noopener noreferrer'>View Project</a>
         <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
-      </div>
+      </div>}
+      {project.slug2 &&
+        <div className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+          <a href={project.slug2} target="_blank" rel='noopener noreferrer'>View Github</a>
+          <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
+        </div>}
     </Card>
   )
 }
@@ -236,18 +241,20 @@ export default function Home() {
       title: "OpenBeta.io",
       description: 'OpenBeta is a new climbing platform, focused completely on empowering the community with open license climbing beta and open source tools. I have built the ticks feature, and do general maintainence/debugging to help out. OpenBeta is made with Next.js, MongoDB, ApolloGraphQL, Tailwind.css, and many other frameworks. **NOTE: I CHANGED THE SCHEMA ON THE BACKEND TO BETTER SUIT OUR USERS. CONSEQUENTLY, YOU WILL RECIEVE A 400 BAD REQUEST ERROR WHEN TRYING TO CREATE A TICK. THERE IS A PULL REQUEST UP ON THE FRONTEND THAT WILL FIX THIS, ONCE APPROVED',
       slug: "http://openbeta.io",
+      slug2: 'https://github.com/orgs/OpenBeta/teams/core-dev/repositories',
       logo: openBeta
     },
     {
       title: "FeatureBox",
       description: 'A practical approach to data structures and algoritihms. This application uses what I have learned from studying data structures and algorithims and applies it to real world features (ex: using a Trie cache to make a text autocomplete feature). Created with Next.js, Tailwind.css, AWS, PostgreSQL, Java, and Spring Boot',
-      slug: "http://github.com/downster/featurebox",
+      slug2: "http://github.com/downster/featurebox",
       logo: logoOpenShuttle
     },
     {
       title: "windVentory",
       description: 'Inventory tracking application created over a month, utilizing Javascript, Python, React.js, Flask, Redux, and Socket.io.',
       slug: 'http://windventory.herokuapp.com',
+      slug2: "https://github.com/Downster/windVentory",
       logo: windVentory
     }
   ]
