@@ -56,7 +56,7 @@ export default function Uses() {
               <div>While slithery(??????), I love the balance that Python strikes. It is efficient and succinct. It also has some very useful built in datastructures, and is very easy to start a backend when combined with flask.  </div>
             </Tool>
             <Tool title="GraphQL" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"}>
-              <div>I love how succinct GrapQL is. It makes getting the information you need, very simple.</div>
+              <div>I love how precise GrapQL is. It makes getting the information you need very simple.</div>
             </Tool>
             <Tool title="HTML5" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"}>
               <div>Tried and true and the only option for rendering websites. We're stuck with you HTML.</div>
@@ -81,7 +81,7 @@ export default function Uses() {
               <div>React makes writing HTML fun. If you are wise, eventually you'll end up with a bunch of reuseable components, effectively streamlining your development process.</div>
             </Tool>
             <Tool title="Next.js" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"}>
-              <div>Gotta love server side rendering with React, along with automatic page integration. Makes my life a lot easier.</div>
+              <div>Gotta love server side rendering with React, along with automatic page integration.</div>
             </Tool>
             <Tool title="Redux" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"}>
               <div>My favorite state management tool, though I haven't used any others so I'm definately biased.</div>
@@ -89,20 +89,20 @@ export default function Uses() {
           </ToolsSection>
           <ToolsSection title="Backend Tools/Frameworks">
             <Tool title="Spring" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"}>
-              <div>Spring has been around for a long time, and while it is fairly complex I love how easy it is to get an app up and running with Spring Boot. I really enjoy working with this backend.</div>
+              <div>Spring has been around for a long time and while it is fairly complex I love how easy it is to get an app up and running with Spring Boot. I really enjoy working with this backend.</div>
             </Tool>
             <Tool title="Flask" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"}>
-              <div>Less opinionatd than Spring Boot but pretty much just as easy to get a backend up and running. Flask is fun.</div>
+              <div>Less opinionated than Spring Boot but pretty much just as easy to get a backend up and running. Flask is fun.</div>
             </Tool>
             <Tool title="Express.js" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"}>
-              <div>I really don't like express that much, it just feels overly complicated to me.</div>
+              <div>Express is okay. Not my first choice, but definately not my last.</div>
             </Tool>
 
 
           </ToolsSection>
           <ToolsSection title="Development tools">
             <Tool title="VSCode" imgSrc={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg'}>
-              <div>Pretty much the jack of all trades of interactive development enviornments. I love VS Code, especially when you make custom themes for it
+              <div>Pretty much the jack of all trades of interactive development enviornments. I love VS Code, especially when you make custom themes for it with pretty colors.
               </div>
             </Tool>
             <Tool title="intelliJ" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"}>
@@ -124,7 +124,7 @@ export default function Uses() {
             </Tool>
             <Tool title="Heroku" imgSrc={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg"}>
               <div>
-                Love hosting things here, still love it even though they are making me pay now.
+                Love hosting things here. Still love it even though they are making me pay now.
               </div>
             </Tool>
           </ToolsSection>
