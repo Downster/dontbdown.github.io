@@ -15,9 +15,9 @@ import Link from 'next/link'
 const projects = [
   {
     name: 'OpenBeta.io',
-    description: 'OpenBeta is a new climbing platform, focused completely on empowering the community with open license climbing beta and open source tools. I have built the ticks feature, and do general maintainence/debugging to help out. OpenBeta is made with Next.js, MongoDB, ApolloGraphQL, Tailwind.css, and many other frameworks. **NOTE: I CHANGED THE SCHEMA ON THE BACKEND TO BETTER SUIT OUR USERS. CONSEQUENTLY, YOU WILL RECIEVE A 400 BAD REQUEST ERROR WHEN TRYING TO CREATE A TICK. THERE IS A PULL REQUEST UP ON THE FRONTEND THAT WILL FIX THIS, ONCE APPROVED',
+    description: 'OpenBeta is a new climbing platform, focused completely on empowering the community with open license climbing beta and open source tools. I have built the ticks feature, and do general maintainence/debugging to help out. OpenBeta is made with Next.js, MongoDB, ApolloGraphQL, Tailwind.css, and many other frameworks.',
 
-    liveLink: { href: 'http://openbeta.io', label: 'OpenBeta.io' },
+    liveLink: { href: 'http://openbeta.io?next=true', label: 'OpenBeta.io' },
     gitHubLink: { href: 'https://github.com/OpenBeta', label: 'OpenBeta on Github' },
     logo: openBeta,
   },
