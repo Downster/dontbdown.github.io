@@ -49,7 +49,7 @@ const projects = [
     name: 'SoundClout',
     description:
       'SoundClout is a pixel perfect Soundcloud clone. Users can upload and comment on songs, aswell as view the songs as a waveform and leave comments at specific times during the song. Soundclout was built with Express.js, AWS S3, React.js, Redux, Wavesurfer.js, Howler.js, etc...',
-    liveLink: { href: 'http://soundclout-app.herokuapp.com', label: 'SoundClout' },
+    liveLink: { href: 'https://soundclout-app.herokuapp.com', label: 'SoundClout' },
     gitHubLink: { href: 'https://github.com/OpenBeta', label: 'OpenBeta on Github' },
     logo: soundClout,
   },
@@ -57,7 +57,7 @@ const projects = [
     name: 'DoggyDone',
     description:
       'Doggy Done is a "smart to-do app" for dog owners, that organizes user tasks, and allows for interactivity on tasks between users. It is inspired by Remember the Milk. Doggy Done is a single page application built with purely vanllia javascript and Pug.js, with an Express.js backend',
-    liveLink: { href: 'http://doggy-done.herokuapp.com', label: 'Doggy Done' },
+    liveLink: { href: 'https://doggy-done.herokuapp.com', label: 'Doggy Done' },
     gitHubLink: { href: '', label: 'OpenBeta on Github' },
     logo: doggyDone,
   },
