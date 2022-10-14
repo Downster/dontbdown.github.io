@@ -262,7 +262,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Brendan Downing - Software engineer, rock climber, and enviornmental advocate
+          Brendan Downing - Software engineer, rock climber, and environmental advocate
         </title>
         <meta
           name="description"
