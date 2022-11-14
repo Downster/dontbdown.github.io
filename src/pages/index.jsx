@@ -17,7 +17,7 @@ import image2 from '../../images/beth.jpg'
 import image3 from '../../images/birthday.jpeg'
 import image4 from '../../images/creek.jpeg'
 import image5 from '../../images/ropeaccess.jpeg'
-import aspiro from '../../images/aspiro.png'
+import qaWolf from '../../images/QAWolf.png'
 import planetGranite from '../../images/planetgranite.png'
 import openBeta from '../../images/openbeta.png'
 import ropePartner from '../../images/ropepartner.png'
@@ -25,9 +25,6 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import windVentory from '../../images/windventory.png'
-import chatter from '../../images/chatter.png'
-import soundClout from '../../images/soundclout.png'
-import doggyDone from '../../images/doggy-done.jpeg'
 
 function MailIcon(props) {
   return (
@@ -127,14 +124,14 @@ function SocialLink({ icon: Icon, ...props }) {
 function Resume() {
   let resume = [
     {
-      company: 'OpenBeta.io',
-      title: 'Open Source Contributor',
-      logo: openBeta,
+      company: 'QA Wolf',
+      title: 'Automation Engineer',
+      logo: qaWolf,
       start: '2022',
       end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
+          label: 'Present',
+          dateTime: new Date().getFullYear(),
+        },
     },
     {
       company: 'Rope Partner',
@@ -149,14 +146,7 @@ function Resume() {
       logo: planetGranite,
       start: '2018',
       end: '2020',
-    },
-    {
-      company: 'AspiroAdventure',
-      title: 'Lead Guide',
-      logo: aspiro,
-      start: '2016',
-      end: '2018',
-    },
+    }
   ]
 
   return (
